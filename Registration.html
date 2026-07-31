@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+    <div class="Registration-container">
+        <h2> Student Registration Form</h2>
+        <form>
+        <label> Name:</label>
+        <input type="text" placeholder="Enter your Name" required><br><br>
+        <label> Roll No:</label>
+        <input type="roll no" placeholder="Enter Your Roll No"><br><br>
+        <label>Branch:</label><br>
+         
+       <select id="branch" name="courses" multiple>
+       <option value="CSE">CSE</option>
+       <option value="mca">MCA</option>
+       <option value="bca">BCA</option>
+</select><br><br>
+        <label>Mobile Number:</label>
+        <input 
+        type="tel" 
+        placeholder="Enter your mobile number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required><br><br>
+        <label>Gender:</label><br>
+        <div class="gender">
+    <label>
+        <input type="radio" name="gender"> Male<br>
+    </label>
+
+    <label>
+        <input type="radio" name="gender"> Female<br>
+        </div>
+    </label><br>
+    <label>Subjects</label>
+<label>
+    <input type="checkbox" name="subject" value="ASP.Net">
+    ASP.Net
+</label>
+<br>
+
+<label>
+    <input type="checkbox" name="subject" value="JAVA">
+    JAVA
+</label>
+<br>
+
+<label>
+    <input type="checkbox" name="subject" value="PYTHON">
+    PYTHON
+</label>
+</form>
+    </div>
+    
+</body>
+</html>
