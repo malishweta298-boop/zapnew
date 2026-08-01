@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="form-container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<div class="form-field">
+<label>Name</label>
+<input type="text" placeholder="Enter your Name" required>
+</div>
+
+<div class="form-field">
+<label>Roll No</label>
+<input type="text" placeholder="Enter Roll Number" required>
+</div>
+
+<div class="form-field">
+<label>Course</label>
+
+<select required>
+<option value="">Select Course</option>
+<option>CSE</option>
+<option>BCA</option>
+<option>MCA</option>
+</select>
+
+</div>
+
+<div class="form-field">
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter Mobile Number" maxlength="10" required>
+</div>
+
+<div class="form-field">
+<label>Email</label>
+<input type="email" placeholder="Enter Email" required>
+</div>
+
+<div class="form-field">
+<label>Password</label>
+<input type="password" id="pass" placeholder="Enter Password" required>
+</div>
+
+<div class="form-field">
+<label>Confirm Password</label>
+<input type="password" id="cpass" placeholder="Confirm Password" required>
+</div>
+
+<div class="form-field">
+
+<label>Gender</label>
+
+<div class="gender">
+
+<label>
+<input type="radio" name="gender">
+Male
+</label>
+
+<label>
+<input type="radio" name="gender">
+Female
+</label>
+
+</div>
+
+</div>
+
+<div class="form-field">
+
+<label>Branch</label>
+
+<div class="branch">
+
+<label>
+<input type="checkbox">
+Computer Science
+</label>
+
+<label>
+<input type="checkbox">
+Electrical
+</label>
+
+<label>
+<input type="checkbox">
+Mechanical
+</label>
+
+</div>
+
+</div>
+
+<div class="form-field">
+
+<label>Address</label>
+
+<textarea placeholder="Enter your Address"></textarea>
+
+</div>
+
+<button type="button" onclick="Register()">Register</button>
+
+</form>
+
+</div>
+
+<script>
+
+function Register(){
+
+let pass=document.getElementById("pass").value;
+
+let cpass=document.getElementById("cpass").value;
+
+if(pass!=cpass){
+
+alert("Passwords do not match!");
+
+return;
+
+}
+
+alert("Registered Successfully!");
+
+}
+
+</script>
+
+</body>
+</html>
